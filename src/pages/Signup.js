@@ -43,7 +43,7 @@ export class Signup extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <h1>Sign up to Chatty</h1>
+          <h1>Sign up to Le Chat</h1>
           <p>Fill in the form below to create an account.</p>
           <div>
             <input
