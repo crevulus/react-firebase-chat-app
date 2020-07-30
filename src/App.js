@@ -50,10 +50,28 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      loading: false,
+      loading: true,
       authenticated: false,
     };
   }
+
+  componentDidMount() {
+    auth().onAuthStateChanged((user) => {
+      console.log(user);
+      if (user) {
+        this.setState({
+          authenticated: true,
+          loading: false,
+        });
+      } else {
+        this.setState({
+          authenticated: false,
+          loading: false,
+        });
+      }
+    });
+  }
+
   render() {
     return this.state.loading === true ? (
       <h2>Loading...</h2>
