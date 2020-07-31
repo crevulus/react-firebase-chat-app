@@ -12,6 +12,7 @@ export class Login extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.googleSignIn = this.googleSignIn.bind(this);
   }
 
   handleChange(event) {
