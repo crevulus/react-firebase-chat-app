@@ -71,7 +71,7 @@ export class Login extends Component {
             Log in with Google
           </button>
           <p>
-            Not signed up yet? <Link to="/sigup">Signup</Link>
+            Not signed up yet? <Link to="/signup">Signup</Link>
           </p>
         </form>
       </div>
